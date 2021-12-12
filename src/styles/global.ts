@@ -9,6 +9,7 @@ const GlobalStyle = createGlobalStyle`
     --white: #FFFFFF;
     --background: #14161C;
     --green: #27AE60;
+    --red: #F42E2E
     --font-default:  'Roboto Mono', monospace;
   }
   body, div, ul, button, h1, p, img, h2, h3, nav, a {
