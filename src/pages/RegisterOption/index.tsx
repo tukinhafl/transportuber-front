@@ -14,7 +14,14 @@ export const RegisterOption = () => {
       <StyledDescription>
         Escolha como você deseja se cadastrar.
       </StyledDescription>
-      <CardRegister />
+      <CardRegister 
+        title='Usuario'
+        description='Você tem a opção de contratar motoristas para fazer a sua mudança.'
+      />
+      <CardRegister 
+        title='Motorista'
+        description='Você tem a opção de fechar negócios com usuários para transportar a carga deles.'
+      />
     </StyledBackgroundPage>
   )
 }

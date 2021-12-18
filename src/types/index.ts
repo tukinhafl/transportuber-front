@@ -1,4 +1,5 @@
-import React, { ReactNode } from 'react';
+import { ReactNode } from 'react';
+import { string } from 'yup/lib/locale';
 
 export interface IInputProps {
   icon: string
@@ -29,4 +30,38 @@ export interface IPerson {
 export interface IStyledButtonProps {
   onClick?: () => void;
   prop?: string;
+}
+
+export interface IProviderProps {
+  children: ReactNode;
+}
+
+export interface IUserContextData {
+  id: string;
+  setId: (token: string) => void;
+}
+
+export interface ICardRegisterProps {
+  title: string;
+  description: string;
+}
+
+export interface IPageTitleProps {
+  title: string;
+  subtitle: string;
+}
+
+export interface IFormRegisterProps {
+  nome: string;
+  sobrenome: string;
+  email: string;
+  password: string;
+  cpf: string;
+  cnh?: string;
+  celular: string;
+}
+
+export interface IFormLoginProps {
+  email: string;
+  password: string;
 }

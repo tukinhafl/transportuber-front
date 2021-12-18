@@ -6,7 +6,7 @@ export const InputContainer = styled.div<{isErrored: boolean}>`
     background: rgba(255, 255, 255, 0.2);
     height: 60px;
     padding: 15px;
-
+    margin: 5px 0;
     border-radius: 10px;
 
     display: flex;

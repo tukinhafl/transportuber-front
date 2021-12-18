@@ -1,14 +1,14 @@
 import { BackToStart } from "../../components/BackToStart"
 import DefaultBackground from "../../components/DefaultBackground/DefaultBackground"
-import { FormLogin } from "../../components/FormLogin"
+import { FormRegisterUser } from "../../components/FormRegisterUser"
 import { PageTitle } from "../../components/PageTitle"
 
-export const Login = () => {
+export const UserRegister = () => {
   return (
     <DefaultBackground>
       <BackToStart />
-      <PageTitle title='Vamos lá,' subtitle='Entre com seu email e sua senha.'/>
-      <FormLogin />
+      <PageTitle title='Vamos lá,' subtitle='Preencha o formulario para se cadastrar.'/>
+      <FormRegisterUser />
     </DefaultBackground>
   )
 }

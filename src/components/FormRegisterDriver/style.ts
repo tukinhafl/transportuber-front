@@ -4,23 +4,18 @@ export const StyledFormContainer = styled.form`
   display: flex;
   flex-direction: column;
   height: 80%;
-  position: relative;
+  justify-content: space-between;
+  margin-top: 20px;
   max-height: 600px;
   overflow: auto;
-  margin-top: 20px;
 
   .continue {
     margin-top: 20px;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
   }
 
   p {
     color: var(--white);
     text-align: center;
-    font-size: 13px;
-    margin-bottom: 5px;
   }
 
   button {

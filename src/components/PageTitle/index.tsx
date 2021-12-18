@@ -1,10 +1,11 @@
+import { IPageTitleProps } from "../../types"
 import { StyledTitleContainer } from "./style"
 
-export const PageTitle = () => {
+export const PageTitle = ( {title, subtitle}: IPageTitleProps ) => {
   return (
     <StyledTitleContainer>
-      <h1>Vamos lá,</h1>
-      <h2>Seja bem vindo de volta, sentimos sua falta</h2>
+      <h1>{title}</h1>
+      <h2>{subtitle}</h2>
     </StyledTitleContainer>
   )
 }
