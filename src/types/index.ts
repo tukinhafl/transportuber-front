@@ -1,5 +1,4 @@
 import { ReactNode } from 'react';
-import { string } from 'yup/lib/locale';
 
 export interface IInputProps {
   icon: string
@@ -38,7 +37,9 @@ export interface IProviderProps {
 
 export interface IUserContextData {
   id: string;
-  setId: (token: string) => void;
+  setUserId: (token: string) => void;
+  setUserData: (resp: IUserData) => void;
+  userData: IUserData;
 }
 
 export interface ICardRegisterProps {
@@ -64,4 +65,46 @@ export interface IFormRegisterProps {
 export interface IFormLoginProps {
   email: string;
   password: string;
+}
+
+export interface IStyledFilterButtonProps {
+  icon: string;
+  height: string;
+  width: string;
+  font: string;
+  text: string;
+  mark?: string;
+}
+
+export interface IUserData {
+  id: number;
+  nome: string;
+  sobrenome: string;
+  email: string;
+  created_at: string;
+  cpf: string;
+  celular: string;
+  nota: number;
+  cargas: [];
+}
+
+export interface IDriverProps {
+  driver: {
+    id: number,
+    nome: string;
+    sobrenome: string;
+    email: string;
+    celular: string;
+    cpf: string;
+    cnh: string;
+    caminhoes: [
+      {
+        marca: string;
+        modelo: string;
+        capacidade_de_carga: number;
+        placa: string;
+      }
+    ];
+    nota: number;
+  }
 }

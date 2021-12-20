@@ -48,7 +48,7 @@ export const FormRegisterUser = () => {
 
     const formSubmit = async ({ nome, sobrenome, email, password, cpf, celular }: IFormRegisterProps) => {
       const user = { nome, sobrenome, email, password, cpf, celular }
-
+      
       try {
         await api.post('autenticacao/usuario/registro', user)
         navigate('/login')
