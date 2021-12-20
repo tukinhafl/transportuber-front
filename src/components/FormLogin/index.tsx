@@ -7,9 +7,11 @@ import { yupResolver } from '@hookform/resolvers/yup'
 import api from "../../services/api"
 import { IFormLoginProps } from "../../types"
 import toast from 'react-hot-toast'
+import { useUserData } from '../../providers/UserData'
 
 export const FormLogin = () => {
   const navigate = useNavigate()
+  const { setUserId } = useUserData()
 
   const formSchema = yup.object().shape({
     "email": yup
@@ -33,7 +35,9 @@ export const FormLogin = () => {
 
       try {
         const resp = await api.post('autenticacao/usuario/acesso', user)
-        console.log(resp.data)
+        const { access_token } = resp.data
+        localStorage.setItem("token", JSON.stringify(access_token))
+        setUserId(access_token)
         navigate('/user')
       }
       catch {

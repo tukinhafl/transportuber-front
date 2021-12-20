@@ -9,13 +9,13 @@ const GlobalStyle = createGlobalStyle`
     --white: #FFFFFF;
     --background: #14161C;
     --green: #27AE60;
-    --red: #F42E2E
-    --font-default:  'Roboto Mono', monospace;
+    --red: #F42E2E;
+    --font-default:  'Roboto', monospace;
   }
   body, div, ul, button, h1, p, img, h2, h3, nav, a {
     margin: 0;
     padding: 0;
-    font-family: var(---font-default);
+    font-family: var(--font-default);
     list-style-type: none;
     box-sizing: border-box;
     text-decoration: none;
