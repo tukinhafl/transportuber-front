@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# PROJETO EM ANDAMENTO
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Design do front-end: https://www.figma.com/file/ymKWnxL5FikRQKOR8eLlx8/CapsTone-Q3-Front?node-id=0%3A1
 
 ## Available Scripts
 
